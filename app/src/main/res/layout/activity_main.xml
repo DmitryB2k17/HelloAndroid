@@ -96,8 +96,6 @@
                 android:textColor="@color/grayBlue"
                 android:text="@string/udacityaddress"
                 />
-
-
         </android.support.v7.widget.CardView>
         <Button android:id="@+id/buttonwebsite"
             android:layout_width="match_parent"
@@ -105,7 +103,7 @@
             android:gravity="center_vertical|center_horizontal"
             android:layout_below="@id/card_view"
             android:text="@string/button_text"
-            android:textColor="#fff"
+            android:textColor="@android:color/white"
             android:elevation="10dp"
             android:backgroundTint="@color/udacityBlue"
             android:onClick="openurl"
