@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openurl(View view) {
       Intent browserIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.udacity.com"));
-      startActivity(browserIntent);
+        if (browserIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(browserIntent);
+        }
     }
 }
