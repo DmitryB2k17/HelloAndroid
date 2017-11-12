@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="udacityaddress">Udacity \n2465 Latham St \nMountain View, CA 94043 \n650-555-5555</string>
+    <string name="motto_1_1">through</string>
+    <string name="motto_1_2">material</string>
+    <string name="motto_2">you will get</string>
+    <string name="button_text">visit website</string>
+</resources>

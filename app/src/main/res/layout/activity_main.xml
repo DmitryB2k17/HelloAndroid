@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/udacitylogo"/>
+    <ImageView android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shadowtop"/>
+    <RelativeLayout android:id="@+id/motto_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/shadow"
+        android:layout_marginTop="-23dp">
+    <TextView android:id="@+id/motto1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/motto_1_1"/>
+
+    <TextView android:id="@+id/motto1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/motto1_1"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/motto_1_2"/>
+
+    </RelativeLayout>
+
+        <ImageView android:id="@+id/droid"
+            android:layout_width="135dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/motto_top"
+            android:scaleType="centerInside"
+            android:src="@drawable/yodadroid"/>
+
+        <TextView android:id="@+id/motto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/droid"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/motto_2"/>
+
+        <android.support.v7.widget.CardView android:id="@+id/card_view"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/motto2"
+            android:layout_margin="20dp"
+            android:background="#404996"
+            card_view:cardElevation="16dp"
+            card_view:cardCornerRadius="4dp">
+            <TextView android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:singleLine="false"
+                android:lineSpacingExtra="3dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/grayBlue"
+                android:text="@string/udacityaddress"
+                />
+
+
+        </android.support.v7.widget.CardView>
+        <Button android:id="@+id/buttonwebsite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@id/card_view"
+            android:text="@string/button_text"
+            android:textColor="#fff"
+            android:elevation="10dp"
+            android:backgroundTint="@color/udacityBlue"
+            android:onClick="openurl"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+</ScrollView>
